@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment - Card and UPI Options | UrbanThreadz</title>
+    <meta name="description" content="Complete your payment securely using card or UPI on UrbanThreadz. Fast, easy, and secure payment options available.">
+    <meta name="keywords" content="Secure payment, UPI payment, card payment, QR code, online payment, UrbanThreadz">
+    <meta name="author" content="UrbanThreadz">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="payment.css">
+    <style>
+        .payment-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .payment-section {
+            width: 48%; /* Adjust the width of each section */
+        }
+        .upi-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .upi-image {
+            width: 250px;  /* Increased size of QR code */
+            height: 250px; /* Adjust the height to maintain the aspect ratio */
+            margin-bottom: 10px;
+        }
+        .pay-now-container {
+            display: flex;
+            justify-content: center; /* Horizontally centers the button */
+            margin-top: 20px; /* Adds spacing between sections and button */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="text-center py-8 bg-blue-600 text-white">
+        <h1 class="text-2xl font-bold">Payment Page</h1>
+    </header>
+
+    <main class="flex justify-center mt-10">
+        <div class="w-full max-w-6xl bg-white p-8 rounded-lg shadow-md">
+            <div class="payment-container">
+                <!-- Card Payment Section -->
+                <div class="payment-section">
+                    <h2 class="text-xl font-semibold text-center mb-6">Payment via Card</h2>
+                    <form id="paymentForm" class="space-y-4">
+                        <div>
+                            <label for="cardNumber" class="block text-sm font-medium mb-1">Card Number:</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234-5678-9101-1121" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="expiryDate" class="block text-sm font-medium mb-1">Expiry Date:</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="cvv" class="block text-sm font-medium mb-1">CVV:</label>
+                            <input type="password" id="cvv" name="cvv" placeholder="***" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="cardHolder" class="block text-sm font-medium mb-1">Cardholder Name:</label>
+                            <input type="text" id="cardHolder" name="cardHolder" placeholder="Full Name" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+                        </div>
+                    </form>
+                </div>
+            
+                <!-- UPI Payment Section -->
+                <div class="payment-section">
+                    <h2 class="text-xl font-semibold text-center mb-6">Scan QR through any UPI Payment App</h2>
+                    <div class="upi-container">
+                        <p class="text-center mb-4">:</p>
+                        <img src="scan.png" alt="UPI QR Code for secure payment" class="upi-image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pay Now Button -->
+            <div class="pay-now-container">
+                <button id="payButton" type="button" class="py-2 px-8 bg-green-600 text-white font-semibold rounded hover:bg-green-700 transition duration-200">
+                    Pay Now
+                </button>
+            </div>
+            
+            <div id="paymentMessage" class="hidden text-center mt-8">
+                <h2 class="text-2xl font-semibold text-green-600">Payment Successful!</h2>
+                <p class="mt-2">Thank you for your order. Your payment has been processed.</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="text-center py-6 mt-10 bg-gray-200 text-sm">
+        <p>© 2024 UrbanThreadz. All rights reserved.</p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>

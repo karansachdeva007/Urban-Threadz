@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile Page with a user-friendly form to enter personal details, provide feedback, and update profile information.">
+    <meta name="keywords" content="Profile Page, User Form, Feedback, Accessibility">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>  </h1>
+        <br>
+        <!-- New Image on the left side -->
+        <div class="profile-photo">
+            <img src="4.jpg" alt="Profile Photo">
+        </div>
+        
+        <div class="form-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <form class="profile-form" id="profileForm" action="/action.php">
+                <h4> </h4>
+                <!-- Form content -->
+                <h4> Name :</h4>
+                <input type="text" id="name" placeholder="Enter Your Name">
+                <br><br>
+                <h4> Contact Number :</h4>
+                <input type="text" id="contact" placeholder="Enter Your Contact Number">
+                <br><br>
+                <h4> Email-Id :</h4>
+                <input type="email" id="email" placeholder="Enter Your Email-Id">
+                <br><br>
+                <h4> Password :</h4>
+                <input type="password" id="password" placeholder="Enter Your Password">
+                <br><br>
+                <h4> Confirmation of password :</h4>
+                <input type="password" id="confirmPassword" placeholder="Confirm Your Password">
+                <br><br>
+
+                <h4> Select Your Gender :</h4>
+                <input type="radio" value="Men" name="Gender">Men
+                <input type="radio" value="Women" name="Gender">Women
+                <br><br>
+                <h4> Select Your City :</h4>
+                <select id="city" name="City">
+                    <option>Delhi</option>
+                    <option>Gurugram</option>
+                    <option>Chennai</option>
+                    <option>Banglore</option>
+                    <option>Mumbai</option>
+                    <option>Pune</option>
+                </select>
+                <br><br>
+                <h4>Enter valuable feedback</h4>
+                <textarea id="feedback" name="feedbackform" placeholder="Please Give Your Valuable Feedback"></textarea>
+                <br><br>
+                <input type="submit" id="submitBtn" class="submit-btn" value="Submit">
+                <br><br>
+                <h3></h3>
+                <!-- <button class="logout-btn" type="button" onclick="logOut()">Log Out</button> -->
+                <button  class="logout-btn" type="button" onclick="logOut()">Log Out</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
+

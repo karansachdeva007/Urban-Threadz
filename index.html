@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Threadz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logocontainer">
+        <a href="index.html"><img class="myntrahome" src="3.png" alt="ut logo"></a>
+    </div>
+
+    <nav class="navbar">
+        <div class="dropdown">
+            <a href="#">Men</a>
+            <div class="dropdowncontent">
+                <a href="#">Shirts</a>
+                <a href="#">Trousers</a>
+                <a href="#">Shoes</a>
+                <a href="#">Jeans</a>
+                <a href="#">Jackets</a>
+            </div>
+        </div>
+       
+        <div class="dropdown">
+            <a href="#">Women</a>
+            <div class="dropdowncontent">
+                <a href="#">Kurtis</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Shoes</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Jeans</a>
+            </div>
+        </div>
+       
+        <div class="dropdown">
+            <a href="#">Kids</a>
+            <div class="dropdowncontent">
+                <a href="#">Bodysuits</a>
+                <a href="#">Flipflops</a>
+                <a href="#">Sandals</a>
+                <a href="#">Caps</a>
+                <a href="#">Pyjamas</a>
+            </div>
+        </div>
+       
+        <div class="dropdown">
+            <a href="#">Home & Living</a>
+            <div class="dropdowncontent">
+                <a href="#">Bedsheets</a>
+                <a href="#">Sofacovers</a>
+                <a href="#">Lamps</a>
+                <a href="#">Mats</a>
+                <a href="#">Cups & Mugs</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#">Beauty</a>
+            <div class="dropdowncontent">
+                <a href="#">Facewash</a>
+                <a href="#">Eyecream</a>
+                <a href="#">Trimmers</a>
+                <a href="#">Haircolors</a>
+                <a href="#">Hairdryer</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="searchbar">
+        <span class="material-symbols-outlined searchicon">search</span>
+        <input class="searchinput" id="search" placeholder="Search for products, brands, and more">
+        <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
+
+    <div class="actionbar">
+        <a href="profile.html" class="actioncontainer1">
+            <span class="material-symbols-outlined actionicon">person</span>
+            <span class="actioname">Profile</span>
+            
+        </a>
+        <a class="actioncontainer3" href="bag.html">
+            <span class="material-symbols-outlined actionicon">shopping_bag</span>
+            <span class="actionbag">Bag</span>
+            <span class="bag-item-count">0</span>
+        </a>
+        <!-- <a href="wishlist.html" class="actioncontainer2">
+            <span class="material-symbols-outlined actionicon">favorite</span>
+            <span class="actionfavourite">Wishlist</span>
+        </a> -->
+
+        <!-- Dark Mode Toggle with Icon -->
+        <div class="dark-mode-toggle-container">
+            <img id="darkModeToggle" src="moonicon.png" alt="Toggle Dark Mode" class="dark-mode-icon" />
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <div class="bannercontainer">
+            <img class="bannerimage" src="banner3.jpg" alt="Myntra banner image">
+            <img class="bannerimage" src="New sneakers.png" alt="banner image 2">
+            <img class="bannerimage" src="banner4.jpg" alt="banner image 3">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+        </div>
+        <div class="items_container"></div>
+    </main>
+    <footer>
+      <div class="footercontainer">
+          <div class="footercolumn">
+              <h3>Online Shopping</h3>
+              <a href="#">Men</a>
+              <a href="#">Women</a>
+              <a href="#">Kids</a>
+              <a href="#">Home & Living</a>
+              <a href="#">Beauty</a>
+              <a href="#">Gift Card</a>
+              <a href="#">Urban Insider</a>
+          </div>
+          <div class="footercolumn">
+              <h3>Customer Policies</h3>
+              <a href="#">Contact Us</a>
+              <a href="#">FAQ</a>
+              <a href="#">T&C</a>
+              <a href="#">Terms Of Use</a>
+              <a href="#">Track Orders</a>
+              <a href="#">Shipping</a>
+              <a href="#">Cancellation</a>
+              <a href="#">Returns</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Grievance Officer</a>
+          </div>
+      </div>
+
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/karan.sachdeva.7545708" target="_blank">
+            <img src="fbpng.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/karansachdeva_24/" target="_blank">
+            <img src="instapng (1).png" alt="Instagram" class="social-icon">
+        </a>
+    </div>
+  
+      <hr>
+  
+      <div class="copyright">
+          © 2024 www.urbanthreadz.com. All rights reserved.
+      </div>
+  </footer>
+  
+    <script src="utdata.js"></script>
+    <script src="ut.js"></script>
+    <script src="darkmode.js"></script> <!-- New script for dark mode -->
+</body>
+</html>

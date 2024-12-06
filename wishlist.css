@@ -1,0 +1,70 @@
+/* Wishlist Container */
+.wishlist-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffe6e6; /* Light pinkish background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid for wishlist items */
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual wishlist item */
+.wishlist-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect on wishlist items */
+.wishlist-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Item image */
+.wishlist-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Item title */
+.wishlist-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Item price */
+.wishlist-item p {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+/* Remove button */
+.remove-btn {
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect on remove button */
+.remove-btn:hover {
+    background-color: #ff1a1a;
+}
+
